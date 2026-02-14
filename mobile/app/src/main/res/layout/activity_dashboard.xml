@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slate_900"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="👤 Dashboard"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:text="Welcome back, Glen!"
+                    android:textSize="14sp"
+                    android:textColor="@color/purple_200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:text="Logout"
+                android:background="@drawable/bg_button_gradient"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+                    <TextView
+                        android:text="📋"
+                        android:textSize="28sp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="Profile Information"
+                            android:textColor="@color/slate_900"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="Your account details"
+                            android:textColor="@color/purple_500"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/box_email"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp">
+                    <TextView
+                        android:text="EMAIL ADDRESS"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:text="glendale@gmail.com"
+                        android:textColor="@color/slate_900"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/box_name"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp">
+                    <TextView
+                        android:text="FULL NAME"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tvFullName"
+                        android:text="Glen"
+                        android:textColor="@color/slate_900"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/box_role"
+                        android:padding="16dp"
+                        android:layout_marginEnd="8dp">
+                        <TextView
+                            android:text="ROLE"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/purple_700"
+                            android:layout_marginBottom="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/tvRole"
+                            android:text="USER"
+                            android:background="@drawable/bg_badge_gradient"
+                            android:textColor="@color/white"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/box_date"
+                        android:padding="16dp"
+                        android:layout_marginStart="8dp">
+                        <TextView
+                            android:text="MEMBER SINCE"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#059669"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="2/7/2026"
+                            android:textColor="@color/slate_900"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="12dp">
+            <LinearLayout
+                android:background="@drawable/grad_authenticated"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:text="🔐" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Authenticated" android:textColor="@color/white" android:textStyle="bold" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Your session is active" android:textColor="#FCE7F3" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="12dp">
+            <LinearLayout
+                android:background="@drawable/grad_protected"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:text="⚡" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Protected" android:textColor="@color/white" android:textStyle="bold" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="JWT token secured" android:textColor="#CFFAFE" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="24dp">
+            <LinearLayout
+                android:background="@drawable/grad_premium"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:text="✨" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Premium" android:textColor="@color/white" android:textStyle="bold" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Full access granted" android:textColor="#EDE9FE" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <TextView android:text="🎯" android:textSize="20sp" android:layout_marginEnd="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Available Features"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:contentPadding="16dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="🛡️" android:textSize="24sp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Enterprise Security" android:textColor="@color/slate_900" android:textStyle="bold" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="BCrypt encryption" android:textColor="@color/slate_800" android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:contentPadding="16dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="🔒" android:textSize="24sp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Protected Routes" android:textColor="@color/slate_900" android:textStyle="bold" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Auth access only" android:textColor="@color/slate_800" android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:contentPadding="16dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="👤" android:textSize="24sp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="User Profiles" android:textColor="@color/slate_900" android:textStyle="bold" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Manage account" android:textColor="@color/slate_800" android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:contentPadding="16dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="⚙️" android:textSize="24sp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Session Mgmt" android:textColor="@color/slate_900" android:textStyle="bold" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Auto token refresh" android:textColor="@color/slate_800" android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:contentPadding="16dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="💾" android:textSize="24sp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Database" android:textColor="@color/slate_900" android:textStyle="bold" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="MySQL + JPA" android:textColor="@color/slate_800" android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                app:contentPadding="16dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="📱" android:textSize="24sp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Responsive" android:textColor="@color/slate_900" android:textStyle="bold" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Mobile optimized" android:textColor="@color/slate_800" android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
